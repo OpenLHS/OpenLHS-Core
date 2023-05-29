@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/OpenLHS-Core
+
+idspace: OPENLHS-CORE
+base_url: /obo/OpenLHS-Core
+
+products:
+- OpenLHS-Core.owl: https://raw.githubusercontent.com/OpenLHS/OpenLHS-Core/main/OpenLHS-Core.owl
+- OpenLHS-Core.obo: https://raw.githubusercontent.com/OpenLHS/OpenLHS-Core/main/OpenLHS-Core.obo
+
+term_browser: ontobee
+example_terms:
+- OPENLHS-CORE_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/OpenLHS/OpenLHS-Core/v
+
+- prefix: /tracker/
+  replacement: https://github.com/OpenLHS/OpenLHS-Core/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/OPENLHS-CORE?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/OpenLHS/OpenLHS-Core/main/
+

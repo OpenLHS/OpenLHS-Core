@@ -1,0 +1,18 @@
+id: OpenLHS-Core
+title: OpenLHS Core Ontology
+github_org: OpenLHS
+repo: OpenLHS-Core
+documentation:
+  documentation_system: mkdocs
+release_artefacts:
+  - full
+  - base
+primary_release: full
+export_formats:
+  - owl
+import_group:
+  products:
+    - id: OntoImports
+      module_type: mirror
+      mirror_from: "https://raw.githubusercontent.com/OpenLHS/OntoImports/main/OntoImports.owl"
+robot_java_args: "-Xmx8G"
