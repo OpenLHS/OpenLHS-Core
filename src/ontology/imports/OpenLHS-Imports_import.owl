@@ -1,4 +1,4 @@
-Prefix(:=<http://purl.obolibrary.org/obo/OpenLHS-Core/imports/OntoImports_import.owl#>)
+Prefix(:=<http://purl.obolibrary.org/obo/OpenLHS-Core/imports/OpenLHS-Imports_import.owl#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -6,10 +6,10 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<http://purl.obolibrary.org/obo/OpenLHS-Core/imports/OntoImports_import.owl>
-<http://purl.obolibrary.org/obo/OpenLHS-Core/releases/2023-05-29/imports/OntoImports_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/OntoImports/releases/2023-05-04/OntoImports.owl>)
-Annotation(owl:versionInfo "2023-05-29")
+Ontology(<http://purl.obolibrary.org/obo/OpenLHS-Core/imports/OpenLHS-Imports_import.owl>
+<http://purl.obolibrary.org/obo/OpenLHS-Core/releases/2023-06-02/imports/OpenLHS-Imports_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/OpenLHS-Imports/releases/2023-06-02/OpenLHS-Imports.owl>)
+Annotation(owl:versionInfo "2023-06-02")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -87,6 +87,8 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000142>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000143>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000219>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000235>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000293>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000295>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000299>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000312>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
@@ -445,17 +447,6 @@ SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/valid_for_gocam> <http:/
 
 SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/ro/subsets#ro-eco> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
 
-# Annotation Property: <http://purl.org/dc/elements/1.1/creator> (Creator)
-
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/description> <http://purl.org/dc/elements/1.1/creator> "Examples of a Creator include a person, an organisation,
-         or a service.  Typically, the name of a Creator should 
-         be used to indicate the entity."@en-us)
-AnnotationAssertion(rdfs:comment <http://purl.org/dc/elements/1.1/creator> "An entity primarily responsible for making the content 
-         of the resource."@en-us)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/creator> <http://purl.org/dc/elements/1.1/>)
-AnnotationAssertion(rdfs:label <http://purl.org/dc/elements/1.1/creator> "Creator"@en-us)
-AnnotationAssertion(rdfs:label <http://purl.org/dc/elements/1.1/creator> "Creator")
-
 # Annotation Property: <http://purl.org/dc/elements/1.1/date> (Date)
 
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/description> <http://purl.org/dc/elements/1.1/date> "Typically, Date will be associated with the creation or
@@ -468,15 +459,17 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/date> <htt
 AnnotationAssertion(rdfs:label <http://purl.org/dc/elements/1.1/date> "Date"@en-us)
 AnnotationAssertion(rdfs:label <http://purl.org/dc/elements/1.1/date> "Date")
 
-# Annotation Property: <http://purl.org/dc/elements/1.1/description> (Description)
+# Annotation Property: <http://purl.org/dc/elements/1.1/source> (Source)
 
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/description> <http://purl.org/dc/elements/1.1/description> "Description may include but is not limited to: an abstract,
-         table of contents, reference to a graphical representation
-         of content or a free-text account of the content."@en-us)
-AnnotationAssertion(rdfs:comment <http://purl.org/dc/elements/1.1/description> "An account of the content of the resource."@en-us)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/description> <http://purl.org/dc/elements/1.1/>)
-AnnotationAssertion(rdfs:label <http://purl.org/dc/elements/1.1/description> "Description"@en-us)
-AnnotationAssertion(rdfs:label <http://purl.org/dc/elements/1.1/description> "Description")
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/description> <http://purl.org/dc/elements/1.1/source> "The present resource may be derived from the Source resource
+         in whole or in part.  Recommended best practice is to reference
+         the resource by means of a string or number conforming to a
+         formal identification system."@en-us)
+AnnotationAssertion(rdfs:comment <http://purl.org/dc/elements/1.1/source> "A reference to a resource from which the present resource
+         is derived."@en-us)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/source> <http://purl.org/dc/elements/1.1/>)
+AnnotationAssertion(rdfs:label <http://purl.org/dc/elements/1.1/source> "Source"@en-us)
+AnnotationAssertion(rdfs:label <http://purl.org/dc/elements/1.1/source> "Source")
 
 # Annotation Property: <http://purl.org/dc/terms/description> (description)
 
@@ -702,6 +695,37 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000235> "denoted by"@en)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/IAO_0000235> <http://purl.obolibrary.org/obo/BFO_0000001>)
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/IAO_0000235> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Object Property: <http://purl.obolibrary.org/obo/OBI_0000293> (has_specified_input)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000293> "has_specified_input"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000293> "has_specified_input")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OBI_0000293> "see is_input_of example_of_usage"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000293> "The inverse property of is_specified_input_of"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0000293> "8/17/09: specified inputs of one process are not necessarily specified inputs of a larger process that it is part of. This is in contrast to how 'has participant' works.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000293> "PERSON: Alan Ruttenberg"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000293> "PERSON: Bjoern Peters")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000293> "PERSON: Larry Hunter")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000293> "PERSON: Melanie Coutot")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/obi.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000293> "has_specified_input"@en)
+EquivalentObjectProperties(<http://purl.obolibrary.org/obo/OBI_0000293> ObjectInverseOf(<http://purl.obolibrary.org/obo/OBI_0000295>))
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/RO_0000057>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/OBI_0000295>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/OBI_0000011>)
+
+# Object Property: <http://purl.obolibrary.org/obo/OBI_0000295> (is_specified_input_of)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000295> "is_specified_input_of")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OBI_0000295> "some Autologous EBV(Epstein-Barr virus)-transformed B-LCL (B lymphocyte cell line) is_input_for instance of Chromum Release Assay described at https://wiki.cbil.upenn.edu/obiwiki/index.php/Chromium_Release_assay"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000295> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000295> "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000295> "Alan Ruttenberg"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000295> "PERSON:Bjoern Peters")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000295> "is_specified_input_of"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0000295> <http://purl.obolibrary.org/obo/RO_0000056>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/OBI_0000295> <http://purl.obolibrary.org/obo/OBI_0000011>)
 
 # Object Property: <http://purl.obolibrary.org/obo/OBI_0000299> (has_specified_output)
 
@@ -1657,7 +1681,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/BFO_0000040> "BFO 2 Reference: ‘Matter’ is intended to encompass both mass and energy (we will address the ontological treatment of portions of energy in a later version of BFO). A portion of matter is anything that includes elementary particles among its proper or improper parts: quarks and leptons, including electrons, as the smallest particles thus far discovered; baryons (including protons and neutrons) at a higher level of granularity; atoms and molecules at still higher levels, forming the cells, organs, organisms and other material entities studied by biologists, the portions of rock studied by geologists, the fossils studied by paleontologists, and so on.Material entities are three-dimensional entities (entities extended in three spatial dimensions), as contrasted with the processes in which they participate, which are four-dimensional entities (entities extended also along the dimension of time).According to the FMA, material entities may have immaterial entities as parts – including the entities identified below as sites; for example the interior (or ‘lumen’) of your small intestine is a part of your body. BFO 2.0 embodies a decision to follow the FMA here."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/cl.owl>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/ido.owl>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/omrse.owl>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/uberon.owl>)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/019-002>) <http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/BFO_0000040> "A material entity is an independent continuant that has some portion of matter as proper or improper continuant part. (axiom label in BFO2 Reference: [019-002])"@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/020-002>) <http://purl.obolibrary.org/obo/IAO_0000601> <http://purl.obolibrary.org/obo/BFO_0000040> "Every entity which has a material entity as continuant part is a material entity. (axiom label in BFO2 Reference: [020-002])"@en)
