@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-<group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
-
-  
-  <uri name="http://purl.obolibrary.org/obo/OpenLHS-Core/imports/OntoImports_import.owl" uri="imports/OntoImports_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/OpenLHS-Core/imports/OntoImports_import.obo" uri="imports/OntoImports_import.obo"/>
-  
-
-
-  
-
-</group>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/OpenLHS-Core/releases/2023-06-02/imports/OpenLHS-Imports_import.owl" uri="imports/OpenLHS-Imports_import.owl"/>
+    <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
+        <uri name="http://purl.obolibrary.org/obo/OpenLHS-Core/imports/OntoImports_import.owl" uri="imports/OntoImports_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/OpenLHS-Core/imports/OntoImports_import.obo" uri="imports/OntoImports_import.obo"/>
+    </group>
 </catalog>

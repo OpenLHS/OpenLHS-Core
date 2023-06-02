@@ -108,7 +108,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  OntoImports
+IMPORTS =  OpenLHS-Imports
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -309,9 +309,9 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms_combined.txt
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
 
-## Module for ontology: OntoImports
+## Module for ontology: OpenLHS-Imports
 
-$(IMPORTDIR)/OntoImports_import.owl: $(MIRRORDIR)/OntoImports.owl $(IMPORTDIR)/OntoImports_terms_combined.txt
+$(IMPORTDIR)/OpenLHS-Imports_import.owl: $(MIRRORDIR)/OpenLHS-Imports.owl $(IMPORTDIR)/OpenLHS-Imports_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< query --update ../sparql/preprocess-module.ru --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru  \
     $(ANNOTATE_CONVERT_FILE); fi
 
@@ -346,11 +346,11 @@ IMP_LARGE=true # Global parameter to bypass handling of large imports
 
 
 
-## ONTOLOGY: OntoImports
-.PHONY: mirror-OntoImports
-.PRECIOUS: $(MIRRORDIR)/OntoImports.owl
-mirror-OntoImports: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I https://raw.githubusercontent.com/OpenLHS/OntoImports/main/OntoImports.owl -o $@.tmp.owl &&\
+## ONTOLOGY: OpenLHS-Imports
+.PHONY: mirror-OpenLHS-Imports
+.PRECIOUS: $(MIRRORDIR)/OpenLHS-Imports.owl
+mirror-OpenLHS-Imports: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I https://raw.githubusercontent.com/OpenLHS/OpenLHS-Imports/main/OpenLHS-Imports.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 

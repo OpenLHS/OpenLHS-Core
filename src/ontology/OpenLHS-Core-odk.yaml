@@ -13,9 +13,9 @@ export_formats:
   - owl
 import_group:
   products:
-    - id: OntoImports
+    - id: OpenLHS-Imports
       module_type: mirror
-      mirror_from: "https://raw.githubusercontent.com/OpenLHS/OntoImports/main/OntoImports.owl"
+      mirror_from: "https://raw.githubusercontent.com/OpenLHS/OpenLHS-Imports/main/OpenLHS-Imports.owl"
 robot_report:
   custom_sparql_exports:
     - base-classes-report
