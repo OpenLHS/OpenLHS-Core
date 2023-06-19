@@ -11,12 +11,12 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core/OpenLHS-Core-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core/releases/2023-06-09/OpenLHS-Core-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core/releases/2023-06-19/OpenLHS-Core-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>OpenLHS Core Ontology</dcterms:title>
-        <owl:versionInfo>2023-06-09</owl:versionInfo>
+        <owl:versionInfo>2023-06-19</owl:versionInfo>
     </owl:Ontology>
     
 
