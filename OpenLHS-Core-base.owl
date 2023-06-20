@@ -11,12 +11,12 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core/OpenLHS-Core-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core/releases/2023-06-19/OpenLHS-Core-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core/releases/2023-06-20/OpenLHS-Core-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>OpenLHS Core Ontology</dcterms:title>
-        <owl:versionInfo>2023-06-19</owl:versionInfo>
+        <owl:versionInfo>2023-06-20</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -243,6 +243,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002"/>
@@ -306,6 +312,24 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000260 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000260"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000031"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000045"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000061"/>
     
 
 
@@ -743,6 +767,25 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000051"/>
         <CommonCoreOntologies:definition xml:lang="en">A continuant temporal characterization specifying a temporal region overlapping with a temporal region during which some continuant disappears.</CommonCoreOntologies:definition>
         <rdfs:label xml:lang="en">continuant disparition characterization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000060">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000031"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000045"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000061"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <CommonCoreOntologies:definition xml:lang="en">An entity that is a disorder, a disease or a pathological bodily process</CommonCoreOntologies:definition>
+        <rdfs:label xml:lang="en">pathological condition</rdfs:label>
     </owl:Class>
     
 

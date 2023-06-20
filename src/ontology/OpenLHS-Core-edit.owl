@@ -9,7 +9,7 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/OpenLHS-Core.owl>
-Import(<http://purl.obolibrary.org/obo/OpenLHS-Core/releases/2023-06-09/imports/OpenLHS-Imports_import.owl>)
+Import(<http://purl.obolibrary.org/obo/OpenLHS-Core/releases/2023-06-20/imports/OpenLHS-Imports_import.owl>)
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "OpenLHS Core Ontology")
@@ -41,6 +41,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000045>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000051>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000052>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000053>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000060>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000293>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000001>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000002>))
@@ -303,6 +304,13 @@ SubClassOf(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000052> <http://purl.ob
 AnnotationAssertion(<http://www.ontologyrepository.com/CommonCoreOntologies/definition> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000053> "A continuant temporal characterization specifying a temporal region overlapping with a temporal region during which some continuant disappears."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OpenLHS-Core_0000053> "continuant disparition characterization"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000053> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000051>)
+
+# Class: <http://purl.obolibrary.org/obo/OpenLHS-Core_0000060> (pathological condition)
+
+AnnotationAssertion(<http://www.ontologyrepository.com/CommonCoreOntologies/definition> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000060> "An entity that is a disorder, a disease or a pathological bodily process"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OpenLHS-Core_0000060> "pathological condition"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000060> ObjectUnionOf(<http://purl.obolibrary.org/obo/OGMS_0000031> <http://purl.obolibrary.org/obo/OGMS_0000045> <http://purl.obolibrary.org/obo/OGMS_0000061>))
+SubClassOf(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000060> <http://purl.obolibrary.org/obo/BFO_0000001>)
 
 # Class: <http://purl.obolibrary.org/obo/SEPIO_0000187> (confidence level)
 
