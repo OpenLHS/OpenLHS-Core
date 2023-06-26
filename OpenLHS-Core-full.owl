@@ -16,11 +16,11 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core/OpenLHS-Core-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core/releases/2023-06-22/OpenLHS-Core-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core/releases/2023-06-26/OpenLHS-Core-full.owl"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>OpenLHS Core Ontology</dcterms:title>
-        <owl:versionInfo>2023-06-22</owl:versionInfo>
+        <owl:versionInfo>2023-06-26</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -184,6 +184,43 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0010000">
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">has axiom label</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000061 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000061">
+        <obo:OpenLHS-Core_0000062 xml:lang="en">Necessary conditions that are definitional, that is the notion to be defined does not appear in the conditions.</obo:OpenLHS-Core_0000062>
+        <rdfs:label xml:lang="en">definitional necessary conditions</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000062 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000062">
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A necessary and sufficient condition that is definitional, that is the notion to be defined does not appear in the condition.</obo:OpenLHS-Core_0000062>
+        <rdfs:label xml:lang="en">definitional necessary and sufficient condition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000063 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000063">
+        <obo:IAO_0000600 xml:lang="en">Human-readable necessary membership condition(s) of a class or a property.</obo:IAO_0000600>
+        <rdfs:comment xml:lang="en">We introduce &apos;necessary conditions&apos; rather than &apos;necessary condition&apos; to avoid the multiplication of annotations.</rdfs:comment>
+        <rdfs:label xml:lang="en">necessary conditions</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000064 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000064">
+        <obo:IAO_0000600 xml:lang="en">Human-readable necessary and sufficient membership condition of a class or a property.</obo:IAO_0000600>
+        <rdfs:label xml:lang="en">necessary and sufficient condition</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -3881,8 +3918,8 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
-        <obo:IAO_0000115 xml:lang="en">A generically dependent continuant that is a building block of information or a combination thereof.</obo:IAO_0000115>
-        <obo:IAO_0000600 xml:lang="en">Contrarily to ICE, informational entities are not necessarily about some things. Therefore they includes ICE, but also words like &apos;unicorn&apos;, letters like &apos;a&apos; or pictures of unicorns.</obo:IAO_0000600>
+        <obo:IAO_0000600 xml:lang="en">A generically dependent continuant that is a building block of information or a combination thereof.</obo:IAO_0000600>
+        <rdfs:comment xml:lang="en">Contrarily to ICE, informational entities are not necessarily about some things. Therefore they includes ICE, but also words like &apos;unicorn&apos;, letters like &apos;a&apos; or pictures of unicorns.</rdfs:comment>
         <rdfs:label xml:lang="en">informational entity</rdfs:label>
     </owl:Class>
     
@@ -3908,10 +3945,15 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A statement for which there is at least one contributor such that if it/he acts upon it, it/he will treat it as true.</obo:IAO_0000115>
-        <obo:IAO_0000600 xml:lang="en">Note that the contributor does not need to believe in the truth of the statement to be disposed to act as if it was true.</obo:IAO_0000600>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A statement for which there is at least one contributor such that if it/he acts upon it, it/he will treat it as true.</obo:OpenLHS-Core_0000062>
         <rdfs:label xml:lang="en">pragmatically accepted statement</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000010"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000062"/>
+        <owl:annotatedTarget xml:lang="en">A statement for which there is at least one contributor such that if it/he acts upon it, it/he will treat it as true.</owl:annotatedTarget>
+        <rdfs:comment xml:lang="en">Note that the contributor does not need to believe in the truth of the statement to be disposed to act as if it was true.</rdfs:comment>
+    </owl:Axiom>
     
 
 
@@ -3936,7 +3978,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">A date of birth recorded in the French civil registrar.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A pragmatically accepted statement authored by a governement or a related organization such that if this organization acts upon it, it will treat it as true.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A pragmatically accepted statement authored by a governement or a related organization such that if this organization acts upon it, it will treat it as true.</obo:OpenLHS-Core_0000062>
         <rdfs:label xml:lang="en">government sanctioned statement</rdfs:label>
     </owl:Class>
     
@@ -3946,7 +3988,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000012">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000009"/>
-        <obo:IAO_0000115 xml:lang="en">An informational entity that can be filled by an informational filler.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">An informational entity that can be filled by an informational filler.</obo:OpenLHS-Core_0000062>
         <rdfs:label xml:lang="en">informational slot</rdfs:label>
     </owl:Class>
     
@@ -3955,6 +3997,17 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
     <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000013 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000013">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000009"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000001"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000012"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000009"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3962,7 +4015,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An informational entity that fills an informational slot.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">An informational entity that fills an informational slot.</obo:OpenLHS-Core_0000062>
         <rdfs:label xml:lang="en">informational filler</rdfs:label>
     </owl:Class>
     
@@ -4095,9 +4148,16 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115 xml:lang="en">An information content entity representing the will of a person to have something done and specifications for the latter.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000061 xml:lang="en">An information content entity representing the will of a person to have something done and that includes specifications for the latter.</obo:OpenLHS-Core_0000061>
+        <rdfs:comment xml:lang="en">It is an open question whether the mereological sum of a request with any other ICE is also a request</rdfs:comment>
         <rdfs:label xml:lang="en">request</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000027"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">It is an open question whether the mereological sum of a request with any other ICE is also a request</owl:annotatedTarget>
+        <obo:IAO_0000116 xml:lang="en">hence the definitional necessary condition.</obo:IAO_0000116>
+    </owl:Axiom>
     
 
 
@@ -4105,7 +4165,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000028">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115 xml:lang="en">An information content entity that specifies a service agreement made between a request party and a service offer party. A service agreement specification can direct some processes that correspond to what has been agreed between the parties.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">An information content entity that specifies a service agreement made between a request party and a service offer party, and can direct some processes that correspond to what has been agreed between the parties.</obo:OpenLHS-Core_0000062>
         <rdfs:label xml:lang="en">service agreement specification</rdfs:label>
     </owl:Class>
     
@@ -4115,24 +4175,32 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000029">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115 xml:lang="en">An information content entity describing the processes a person or an organization is willing to perform, usually for a compensation.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000061 xml:lang="en">An information content entity describing the processes a person or an organization is willing to perform for a third-party.</obo:OpenLHS-Core_0000061>
         <rdfs:label xml:lang="en">service offer</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000029"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000061"/>
+        <owl:annotatedTarget xml:lang="en">An information content entity describing the processes a person or an organization is willing to perform for a third-party.</owl:annotatedTarget>
+        <obo:IAO_0000116 xml:lang="en">It is an open question whether offering to cook for one&apos;s spouse is a service offer.</obo:IAO_0000116>
+        <rdfs:comment xml:lang="en">A service is usually offered for a compensation</rdfs:comment>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000030">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000174"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An information content entity that is about a one-dimension temporal region.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">temporal information</rdfs:label>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A statement that states that a temporal region overlaps with a temporal region during which some entity exists.</obo:OpenLHS-Core_0000062>
+        <rdfs:label xml:lang="en">temporal characterization</rdfs:label>
     </owl:Class>
     
 
@@ -4147,8 +4215,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A temporal information specifying a temporal region and stating that it overlaps with a temporal region during which some process occured.</obo:IAO_0000115>
-        <obo:IAO_0000600 xml:lang="en">&quot;stating&quot; because the process might have in fact occured at a different time.</obo:IAO_0000600>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A temporal characterization stating that a temporal region overlaps with a temporal region during which some process occurred, occurs or will occur.</obo:OpenLHS-Core_0000062>
         <rdfs:label xml:lang="en">process temporal characterization</rdfs:label>
     </owl:Class>
     
@@ -4158,10 +4225,15 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000033">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000031"/>
-        <obo:IAO_0000115 xml:lang="en">A temporal information specifying a temporal region and stating that it overlaps with a temporal region during which some process began.</obo:IAO_0000115>
-        <obo:IAO_0000600 xml:lang="en">A process that is a mereological sum of temporally disconnected processes has only one process beginning.</obo:IAO_0000600>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A process temporal characterization characterizing temporally the beginning of a process.</obo:OpenLHS-Core_0000062>
         <rdfs:label xml:lang="en">process beginning characterization</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000033"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000062"/>
+        <owl:annotatedTarget xml:lang="en">A process temporal characterization characterizing temporally the beginning of a process.</owl:annotatedTarget>
+        <rdfs:comment xml:lang="en">A process that is a mereological sum of temporally disconnected processes has only one process beginning.</rdfs:comment>
+    </owl:Axiom>
     
 
 
@@ -4169,10 +4241,15 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000034">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000031"/>
-        <obo:IAO_0000115 xml:lang="en">A temporal information specifying a temporal region and stating that it overlaps with a temporal region during which some process ended.</obo:IAO_0000115>
-        <obo:IAO_0000600 xml:lang="en">A process that is a mereological sum of temporally disconnected processes has only one process ending.</obo:IAO_0000600>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A process temporal characterization characterizing temporally the ending of a process.</obo:OpenLHS-Core_0000062>
         <rdfs:label xml:lang="en">process ending characterization</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000034"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000062"/>
+        <owl:annotatedTarget xml:lang="en">A process temporal characterization characterizing temporally the ending of a process.</owl:annotatedTarget>
+        <rdfs:comment xml:lang="en">A process that is a mereological sum of temporally disconnected processes has only one process ending.</rdfs:comment>
+    </owl:Axiom>
     
 
 
@@ -4240,7 +4317,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A plan of an agent to act as if some statement was true.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A plan of an agent to act as if some statement was true.</obo:OpenLHS-Core_0000062>
         <rdfs:label xml:lang="en">agent plan to act as if some statement was true</rdfs:label>
     </owl:Class>
     
@@ -4256,8 +4333,8 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000043"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <CommonCoreOntologies:definition xml:lang="en">A continuant apparition characterization that characterizes the apparition a plan to act as if some statement was true.</CommonCoreOntologies:definition>
-        <rdfs:label xml:lang="en">apparition of a plan to act as if some statement was true</rdfs:label>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A continuant apparition characterization that characterizes the apparition of a plan to act as if some statement was true.</obo:OpenLHS-Core_0000062>
+        <rdfs:label xml:lang="en">characterization of the appearance of a plan to act as if some statement was true</rdfs:label>
     </owl:Class>
     
 
@@ -4272,8 +4349,8 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000043"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <CommonCoreOntologies:definition xml:lang="en">A continuant disparition characterization that characterizes the disparition a plan to act as if some statement was true.</CommonCoreOntologies:definition>
-        <rdfs:label xml:lang="en">disparition of a plan to act as if some statement was true</rdfs:label>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A continuant disappearance characterization that characterizes the disappearance of a plan to act as if some statement was true.</obo:OpenLHS-Core_0000062>
+        <rdfs:label xml:lang="en">characterization of the disappearance of a plan to act as if some statement was true</rdfs:label>
     </owl:Class>
     
 
@@ -4288,8 +4365,8 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000112 xml:lang="en">&apos;May 5th 2023&apos; for characterizing a plan that existed from 8 AM to noon on this day.</obo:IAO_0000112>
-        <CommonCoreOntologies:definition xml:lang="en">A temporal information specifying a temporal region overlapping with a temporal region during which some continuant exists.</CommonCoreOntologies:definition>
+        <obo:IAO_0000112 xml:lang="en">&apos;May 5th 2023&apos; for characterizing temporally a plan that existed from 8 AM to noon on this day.</obo:IAO_0000112>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A temporal characterization stating that a temporal region overlaps with a temporal region during which some continuant exists.</obo:OpenLHS-Core_0000062>
         <rdfs:label xml:lang="en">continuant temporal characterization</rdfs:label>
     </owl:Class>
     
@@ -4299,8 +4376,8 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000052">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000051"/>
-        <CommonCoreOntologies:definition xml:lang="en">A continuant temporal characterization specifying a temporal region overlapping with a temporal region during which some continuant appears.</CommonCoreOntologies:definition>
-        <rdfs:label xml:lang="en">continuant apparition characterization</rdfs:label>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A continuant temporal characterization characterizing temporally the appearance of a continuant.</obo:OpenLHS-Core_0000062>
+        <rdfs:label xml:lang="en">continuant appearance characterization</rdfs:label>
     </owl:Class>
     
 
@@ -4309,8 +4386,8 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000053">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000051"/>
-        <CommonCoreOntologies:definition xml:lang="en">A continuant temporal characterization specifying a temporal region overlapping with a temporal region during which some continuant disappears.</CommonCoreOntologies:definition>
-        <rdfs:label xml:lang="en">continuant disparition characterization</rdfs:label>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A continuant temporal characterization characterizing temporally the disappearance of a continuant.</obo:OpenLHS-Core_0000062>
+        <rdfs:label xml:lang="en">continuant disappearance characterization</rdfs:label>
     </owl:Class>
     
 
@@ -4328,8 +4405,25 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <CommonCoreOntologies:definition xml:lang="en">An entity that is a disorder, a disease or a pathological bodily process</CommonCoreOntologies:definition>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">An entity that is a disorder, a disease or a pathological bodily process</obo:OpenLHS-Core_0000062>
         <rdfs:label xml:lang="en">pathological condition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">An information content entity that denotes a one-dimension temporal region.</obo:OpenLHS-Core_0000062>
+        <rdfs:label xml:lang="en">temporal information</rdfs:label>
     </owl:Class>
     
 
