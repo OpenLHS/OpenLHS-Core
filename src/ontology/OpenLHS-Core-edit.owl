@@ -112,7 +112,7 @@ ObjectPropertyRange(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000001> <http:
 
 # Object Property: <http://purl.obolibrary.org/obo/OpenLHS-Core_0000004> (is directed by)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000064> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000004> "The inverse relations of directs"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000062> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000004> "The inverse relations of directs"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OpenLHS-Core_0000004> "is directed by"@en)
 InverseObjectProperties(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000004> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000007>)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000004> <http://purl.obolibrary.org/obo/BFO_0000015>)
@@ -127,7 +127,7 @@ ObjectPropertyDomain(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000005> <http
 
 # Object Property: <http://purl.obolibrary.org/obo/OpenLHS-Core_0000007> (directs)
 
-AnnotationAssertion(Annotation(rdfs:comment "This includes failed attempts where B is not compliant to A."@en) <http://purl.obolibrary.org/obo/OpenLHS-Core_0000063> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000007> "A directs B := A is a directive information entity that guides an agent in the execution of B."@en)
+AnnotationAssertion(Annotation(rdfs:comment "This includes failed attempts where B is not compliant to A."@en) <http://purl.obolibrary.org/obo/OpenLHS-Core_0000061> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000007> "A directs B := A is a directive information entity that guides an agent in the execution of B."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OpenLHS-Core_0000007> "directs"@en)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000007> <http://purl.obolibrary.org/obo/IAO_0000033>)
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000007> <http://purl.obolibrary.org/obo/BFO_0000015>)
@@ -143,7 +143,7 @@ ObjectPropertyRange(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000008> <http:
 
 # Object Property: <http://purl.obolibrary.org/obo/OpenLHS-Core_0000066> (successfully directs)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000063> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000066> "A successfully directs B := A directs B, and B is compliant to A."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000061> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000066> "A successfully directs B := A directs B, and B is compliant to A."@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OpenLHS-Core_0000066> "Discussed in: Adrien Barton, Laure Vieu, Jean-François Ethier. Directing Actions. Workshop on Foundational Ontology (FOUST III), Joint Ontology Workshops (JOWO 2019), Sep 2019, Graz, Austria."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OpenLHS-Core_0000066> "successfully directs"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000066> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000007>)
@@ -152,7 +152,7 @@ ObjectPropertyRange(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000066> <http:
 
 # Object Property: <http://purl.obolibrary.org/obo/OpenLHS-Core_0000067> (is successfully directed by)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000064> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000067> "The inverse relation of is successfully directed by."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000062> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000067> "The inverse relation of is successfully directed by."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OpenLHS-Core_0000067> "is successfully directed by"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000067> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000004>)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000067> <http://purl.obolibrary.org/obo/BFO_0000015>)
@@ -270,7 +270,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000029> <http://purl.ob
 
 # Class: <http://purl.obolibrary.org/obo/OpenLHS-Core_0000030> (temporal characterization)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000062> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000030> "A statement that states that a temporal region overlaps with a temporal region during which some entity exists."@en)
+AnnotationAssertion(Annotation(rdfs:comment "More formally, this amount to states that a temporal region overlaps (in the sense of Allen's temporal relations) with a temporal region during which some entity exists."@en) <http://purl.obolibrary.org/obo/OpenLHS-Core_0000062> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000030> "A statement that states that an entity existed, exists or will exist at some point during a specified temporal region."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OpenLHS-Core_0000030> "temporal characterization"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000030> <http://purl.obolibrary.org/obo/SEPIO_0000174>)
 SubClassOf(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002180> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000065>))
@@ -296,7 +296,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000034> <http://purl.ob
 
 # Class: <http://purl.obolibrary.org/obo/OpenLHS-Core_0000035> (service agreement negotiation)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000035> "A planned process of interaction between a request party and a service offer party having as specified input some request and some service offer and that aims to generate as output a service agreement."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000061> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000035> "A planned process of interaction between a request party and a service offer party having as specified input some request and some service offer and that aims to generate as output a service agreement."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OpenLHS-Core_0000035> "service agreement negotiation"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000035> <http://purl.obolibrary.org/obo/OBI_0000011>)
 SubClassOf(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000027>))
@@ -304,7 +304,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000035> ObjectSomeValue
 
 # Class: <http://purl.obolibrary.org/obo/OpenLHS-Core_0000036> (service delivery)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000036> "A planned process that aims at fulfilling the commitments of a service agreement."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000062> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000036> "A planned process that aims at fulfilling the commitments of a service agreement."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OpenLHS-Core_0000036> "service delivery"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000036> <http://purl.obolibrary.org/obo/OBI_0000011>)
 SubClassOf(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000004> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000028>))
