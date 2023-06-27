@@ -4077,7 +4077,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000026"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A postal address that can be used to help the delivery of something in Canada.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000061 xml:lang="en">A postal address that can be used to help the delivery of something in Canada.</obo:OpenLHS-Core_0000061>
         <rdfs:label xml:lang="en">canadian postal address</rdfs:label>
     </owl:Class>
     
@@ -4093,7 +4093,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000026"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An identifier that denotes a Canadian municipality (as determined by provincial/territorial legislation) or a Canadian area treated as a municipal equivalent for statistical purposes (e.g., Indian reserves, Indian settlements and unorganized territories).</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">An identifier that denotes a Canadian municipality (as determined by provincial/territorial legislation) or a Canadian area treated as a municipal equivalent for statistical purposes (e.g., Indian reserves, Indian settlements and unorganized territories).</obo:OpenLHS-Core_0000062>
         <rdfs:label xml:lang="en">canadian census subdivision identifier</rdfs:label>
     </owl:Class>
     
@@ -4103,7 +4103,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
-        <obo:IAO_0000115 xml:lang="en">An identifier that denotes a Canadian province or a Canadian territory.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">An identifier that denotes a Canadian province or a Canadian territory.</obo:OpenLHS-Core_0000062>
         <rdfs:label xml:lang="en">canadian first-order administrative region identifier</rdfs:label>
     </owl:Class>
     
@@ -4113,7 +4113,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
-        <obo:IAO_0000115 xml:lang="en">An identifier that denotes a geographical region on which is based the first three characters of a Canadian postal code.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">An identifier that denotes a geographical region on which is based the first three characters of a Canadian postal code.</obo:OpenLHS-Core_0000062>
         <rdfs:label xml:lang="en">canadian forward sorting area code</rdfs:label>
     </owl:Class>
     
@@ -4129,7 +4129,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000422"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An identifier that denotes a city and is intended to be used as part of a postal address.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">An identifier that denotes a city and is intended to be used as part of a postal address.</obo:OpenLHS-Core_0000062>
         <rdfs:label xml:lang="en">postal address city</rdfs:label>
     </owl:Class>
     
@@ -4145,7 +4145,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000422"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An identifier that denotes a country and is intended to be used as part of a postal address.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">An identifier that denotes a country and is intended to be used as part of a postal address.</obo:OpenLHS-Core_0000062>
         <rdfs:label xml:lang="en">postal address country</rdfs:label>
     </owl:Class>
     
@@ -4162,7 +4162,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A postal code information that is about some geographical region in Canada.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A postal code that denotes some geographical region in Canada.</obo:OpenLHS-Core_0000062>
         <rdfs:label xml:lang="en">canadian postal code</rdfs:label>
     </owl:Class>
     
