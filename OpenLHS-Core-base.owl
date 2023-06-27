@@ -37,12 +37,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
@@ -201,7 +195,7 @@
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000007"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <obo:OpenLHS-Core_0000064 xml:lang="en">The inverse relations of directs</obo:OpenLHS-Core_0000064>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">The inverse relations of directs</obo:OpenLHS-Core_0000062>
         <rdfs:label xml:lang="en">is directed by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -223,12 +217,12 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000007">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:OpenLHS-Core_0000063 xml:lang="en">A directs B := A is a directive information entity that guides an agent in the execution of B.</obo:OpenLHS-Core_0000063>
+        <obo:OpenLHS-Core_0000061 xml:lang="en">A directs B := A is a directive information entity that guides an agent in the execution of B.</obo:OpenLHS-Core_0000061>
         <rdfs:label xml:lang="en">directs</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000007"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000063"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000061"/>
         <owl:annotatedTarget xml:lang="en">A directs B := A is a directive information entity that guides an agent in the execution of B.</owl:annotatedTarget>
         <rdfs:comment xml:lang="en">This includes failed attempts where B is not compliant to A.</rdfs:comment>
     </owl:Axiom>
@@ -254,7 +248,7 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000007"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:OpenLHS-Core_0000063 xml:lang="en">A successfully directs B := A directs B, and B is compliant to A.</obo:OpenLHS-Core_0000063>
+        <obo:OpenLHS-Core_0000061 xml:lang="en">A successfully directs B := A directs B, and B is compliant to A.</obo:OpenLHS-Core_0000061>
         <rdfs:comment xml:lang="en">Discussed in: Adrien Barton, Laure Vieu, Jean-François Ethier. Directing Actions. Workshop on Foundational Ontology (FOUST III), Joint Ontology Workshops (JOWO 2019), Sep 2019, Graz, Austria.</rdfs:comment>
         <rdfs:label xml:lang="en">successfully directs</rdfs:label>
     </owl:ObjectProperty>
@@ -267,7 +261,7 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000004"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <obo:OpenLHS-Core_0000064 xml:lang="en">The inverse relation of is successfully directed by.</obo:OpenLHS-Core_0000064>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">The inverse relation of is successfully directed by.</obo:OpenLHS-Core_0000062>
         <rdfs:label xml:lang="en">is successfully directed by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -688,9 +682,15 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:OpenLHS-Core_0000062 xml:lang="en">A statement that states that a temporal region overlaps with a temporal region during which some entity exists.</obo:OpenLHS-Core_0000062>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A statement that states that an entity existed, exists or will exist at some point during a specified temporal region.</obo:OpenLHS-Core_0000062>
         <rdfs:label xml:lang="en">temporal characterization</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000030"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000062"/>
+        <owl:annotatedTarget xml:lang="en">A statement that states that an entity existed, exists or will exist at some point during a specified temporal region.</owl:annotatedTarget>
+        <rdfs:comment xml:lang="en">More formally, this amount to states that a temporal region overlaps (in the sense of Allen&apos;s temporal relations) with a temporal region during which some entity exists.</rdfs:comment>
+    </owl:Axiom>
     
 
 
@@ -758,7 +758,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000029"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A planned process of interaction between a request party and a service offer party having as specified input some request and some service offer and that aims to generate as output a service agreement.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000061 xml:lang="en">A planned process of interaction between a request party and a service offer party having as specified input some request and some service offer and that aims to generate as output a service agreement.</obo:OpenLHS-Core_0000061>
         <rdfs:label xml:lang="en">service agreement negotiation</rdfs:label>
     </owl:Class>
     
@@ -774,7 +774,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000028"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A planned process that aims at fulfilling the commitments of a service agreement.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A planned process that aims at fulfilling the commitments of a service agreement.</obo:OpenLHS-Core_0000062>
         <rdfs:label xml:lang="en">service delivery</rdfs:label>
     </owl:Class>
     
