@@ -64,14 +64,14 @@ Declaration(AnnotationProperty(dcterms:title))
 #   Annotation Properties
 ############################
 
-# Annotation Property: <http://purl.obolibrary.org/obo/OpenLHS-Core_0000061> (definitional necessary conditions)
+# Annotation Property: <http://purl.obolibrary.org/obo/OpenLHS-Core_0000061> (definitional necessary condition)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000062> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000061> "Necessary conditions that are definitional, that is the notion to be defined does not appear in the conditions."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OpenLHS-Core_0000061> "definitional necessary conditions"@en)
+AnnotationAssertion(Annotation(rdfs:comment "If we know several necessary conditions associated with an entity, we write as definitional necessary condition the conjunction of them."@en) <http://purl.obolibrary.org/obo/OpenLHS-Core_0000062> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000061> "Necessary condition that is definitional, that is the notion to be defined does not appear in the condition."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OpenLHS-Core_0000061> "definitional necessary condition"@en)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/OpenLHS-Core_0000062> (definitional necessary and sufficient condition)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000062> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000062> "A necessary and sufficient condition that is definitional, that is the notion to be defined does not appear in the condition."@en)
+AnnotationAssertion(Annotation(rdfs:comment "If we know several necessary and sufficient conditions associated with an entity, we write as definitional necessary and sufficient condition the disjunction of them, and as definitional necessary condition the conjunction of them."@en) <http://purl.obolibrary.org/obo/OpenLHS-Core_0000062> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000062> "A necessary and sufficient condition that is definitional, that is the notion to be defined does not appear in the condition."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OpenLHS-Core_0000062> "definitional necessary and sufficient condition"@en)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/OpenLHS-Core_0000063> (necessary conditions)
@@ -276,9 +276,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000027> <http://purl.ob
 
 # Class: <http://purl.obolibrary.org/obo/OpenLHS-Core_0000028> (service agreement specification)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000062> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000028> "An information content entity that specifies a service agreement made between a request party and a service offer party, and can direct some processes that correspond to what has been agreed between the parties."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000061> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000028> "An information content entity that is the output of a service agreement negociation."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000062> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000028> "An information content entity that specifies a service agreement made between a request party and a service offer party, and aim to direct some processes that correspond to what has been agreed between the parties."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OpenLHS-Core_0000028> "service agreement specification"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000028> <http://purl.obolibrary.org/obo/IAO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000028> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000035>))
 
 # Class: <http://purl.obolibrary.org/obo/OpenLHS-Core_0000029> (service offer)
 
