@@ -14,12 +14,12 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core/OpenLHS-Core-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core/releases/2023-10-17/OpenLHS-Core-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core/releases/2023-10-19/OpenLHS-Core-base.owl"/>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:description>None</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <terms:title>OpenLHS Core Ontology</terms:title>
-        <owl:versionInfo>2023-10-17</owl:versionInfo>
+        <owl:versionInfo>2023-10-19</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -482,9 +482,7 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000646 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000646">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000054"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000646"/>
     
 
 
@@ -706,7 +704,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000054"/>
         <obo:IAO_0000115 xml:lang="en">An identifier that denotes a geographical region on which is based the first three characters of a Canadian postal code.</obo:IAO_0000115>
         <obo:OpenLHS-Core_0000062 xml:lang="en">An identifier that denotes a geographical region on which is based the first three characters of a Canadian postal code.</obo:OpenLHS-Core_0000062>
         <rdfs:label xml:lang="en">canadian forward sorting area code</rdfs:label>
@@ -1074,7 +1071,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">4 Km</obo:IAO_0000112>
-        <obo:OpenLHS-Core_0000061 xml:lang="en">An information content entity whose structure and content are specified and includes a litteral value.</obo:OpenLHS-Core_0000061>
+        <obo:OpenLHS-Core_0000061 xml:lang="en">An information content entity whose structure and content follow a template.</obo:OpenLHS-Core_0000061>
         <rdfs:label xml:lang="en">specified value</rdfs:label>
     </owl:Class>
     
@@ -1162,12 +1159,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000073"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An information content entity that denotes a one-dimension temporal region.</obo:IAO_0000115>
         <obo:OpenLHS-Core_0000062 xml:lang="en">An information content entity that denotes a one-dimension temporal region.</obo:OpenLHS-Core_0000062>
         <rdfs:label xml:lang="en">temporal information</rdfs:label>
