@@ -1,0 +1,36 @@
+IRI,value,def
+OpenLHS-Core_0000009,informational entity,
+OpenLHS-Core_0000010,pragmatically accepted statement,"A statement for which there is at least one contributor such that if it/he acts upon it, it/he will treat it as true."
+OpenLHS-Core_0000011,government sanctioned statement,"A pragmatically accepted statement authored by a governement or a related organization such that if this organization acts upon it, it will treat it as true."
+OpenLHS-Core_0000012,informational slot,An informational entity that can be filled by an informational filler.
+OpenLHS-Core_0000013,informational filler,An informational entity that fills an informational slot.
+OpenLHS-Core_0000020,canadian postal address,A postal address that can be used to help the delivery of something in Canada.
+OpenLHS-Core_0000021,canadian census subdivision identifier,"An identifier that denotes a Canadian municipality (as determined by provincial/territorial legislation) or a Canadian area treated as a municipal equivalent for statistical purposes (e.g., Indian reserves, Indian settlements and unorganized territories)."
+OpenLHS-Core_0000022,canadian first-order administrative region identifier,An identifier that denotes a Canadian province or a Canadian territory.
+OpenLHS-Core_0000023,canadian forward sorting area code,An identifier that denotes a geographical region on which is based the first three characters of a Canadian postal code.
+OpenLHS-Core_0000024,postal address city,An identifier that denotes a city and is intended to be used as part of a postal address.
+OpenLHS-Core_0000025,postal address country,An identifier that denotes a country and is intended to be used as part of a postal address.
+OpenLHS-Core_0000026,canadian postal code,A postal code that denotes some geographical region in Canada.
+OpenLHS-Core_0000027,request,"An information content entity specifiying one or several types of processes that a party, whether a person or an organization, wants to see instantiated for the benefit of itself or another party."
+OpenLHS-Core_0000028,service agreement specification,"An information content entity that specifies a service agreement made between a request party and a service offer party, and aim to direct some processes that correspond to what has been agreed between the parties."
+OpenLHS-Core_0000029,service offer,An information content entity describing the processes a person or an organization is willing to perform for a third-party.
+OpenLHS-Core_0000030,temporally qualifying statement,"A statement that states that an entity existed, exists or will exist at some point during a specified temporal region."
+OpenLHS-Core_0000031,process temporally qualifying statement,"A temporally qualifying statement stating that a temporal region overlaps with a temporal region during which some process occurred, occurs or will occur."
+OpenLHS-Core_0000033,process beginning statement,A process temporally qualifying statement qualifying temporally the beginning of a process.
+OpenLHS-Core_0000034,process ending statement,A process temporally qualifying statement qualifying temporally the ending of a process.
+OpenLHS-Core_0000035,service agreement negotiation,A planned process of interaction between a request party and a service offer party having as specified input some request and some service offer and that aims to generate as output a service agreement.
+OpenLHS-Core_0000036,service delivery,"- A planned process that aims at fulfilling the commitments of a service agreement.
+
+- A planned process that is maximally directed by a service agreement specification."
+OpenLHS-Core_0000043,agent plan to act as if some statement was true,A plan of an agent to act as if some statement was true.
+OpenLHS-Core_0000044,temporal qualification of the appearance of a plan to act as if some statement was true,A continuant appearance statement that temporally qualifies the apparition of a plan to act as if some statement was true.
+OpenLHS-Core_0000045,temporal qualification of the disappearance of a plan to act as if some statement was true,A continuant disappearance statement that temporally qualifies the disappearance of a plan to act as if some statement was true.
+OpenLHS-Core_0000051,continuant temporally qualifying statement,A temporally qualifying statement stating that a temporal region overlaps with a temporal region during which some continuant exists.
+OpenLHS-Core_0000052,continuant appearance statement,A continuant temporally qualifying statement qualifying temporally the appearance of a continuant.
+OpenLHS-Core_0000053,continuant disappearance statement,A continuant temporally qualifying statement temporally qualifying the disappearance of a continuant.
+OpenLHS-Core_0000054,specified value,
+OpenLHS-Core_0000055,numerical specified value,
+OpenLHS-Core_0000056,unit qualified scalar specified value,
+OpenLHS-Core_0000057,unit,
+OpenLHS-Core_0000060,pathological condition,"An entity that is a disorder, a disease or a pathological bodily process"
+OpenLHS-Core_0000065,temporal information,An information content entity that denotes a one-dimension temporal region.
