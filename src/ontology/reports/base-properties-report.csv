@@ -1,0 +1,10 @@
+IRI,value,def
+OpenLHS-Core_0000001,fills,
+OpenLHS-Core_0000004,is directed by,The inverse relations of directs
+OpenLHS-Core_0000005,is about an aspect of,A is about an aspect of B := A is about a specifically dependent continuant that inheres in B.
+OpenLHS-Core_0000007,directs,A directs B := A is a directive information entity that guides an agent in the execution of B.
+OpenLHS-Core_0000008,is filled by,The inverse relation of fills
+OpenLHS-Core_0000066,maximally directs,"A maximally directs B := A directs B, and B is compliant to A."
+OpenLHS-Core_0000067,is maximally directed by,The inverse relation of maximally directs.
+OpenLHS-Core_0000070,component of,The inverse relation of has component.
+OpenLHS-Core_0000071,component process of,The inverse relation of has component process.

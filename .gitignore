@@ -11,7 +11,7 @@ bin/
 
 src/ontology/mirror
 src/ontology/mirror/*
-src/ontology/reports/*
+#src/ontology/reports/*
 src/ontology/OpenLHS-Core.owl
 src/ontology/OpenLHS-Core.obo
 src/ontology/OpenLHS-Core.json
