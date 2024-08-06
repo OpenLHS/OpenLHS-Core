@@ -14,3 +14,13 @@ You can find descriptions of the standard ontology engineering workflows [here](
 ## OpenLHS-Core Properties
 
 {{ read_csv('../src/ontology/reports/base-properties-report.csv') }}
+
+
+## OpenLHS-Core Annotations
+
+{{ read_csv('../src/ontology/reports/base-annotations-report.csv') }}
+
+
+## OpenLHS-Core Data Properties
+
+{{ read_csv('../src/ontology/reports/base-dataproperties-report.csv') }}

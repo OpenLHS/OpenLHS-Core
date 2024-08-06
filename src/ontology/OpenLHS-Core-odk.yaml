@@ -21,4 +21,6 @@ robot_report:
   custom_sparql_exports:
     - base-classes-report
     - base-properties-report
+    - base-annotations-report
+    - base-dataproperties-report
 robot_java_args: "-Xmx8G"
