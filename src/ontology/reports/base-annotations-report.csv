@@ -1,0 +1,6 @@
+IRI,value,def
+OpenLHS-Core_0000061,definitional necessary conditions,"Necessary condition that is definitional, that is the notion to be defined does not appear in the condition."
+OpenLHS-Core_0000062,definitional necessary and sufficient conditions,"A necessary and sufficient condition that is definitional, that is the notion to be defined does not appear in the condition."
+OpenLHS-Core_0000063,necessary conditions,
+OpenLHS-Core_0000064,necessary and sufficient conditions,
+OpenLHS-Core_0000100,ontorel specification,An annotation property used to tag relevant classes for ontorel generation

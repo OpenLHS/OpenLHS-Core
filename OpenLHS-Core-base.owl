@@ -14,12 +14,12 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core/OpenLHS-Core-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core/releases/2024-08-01/OpenLHS-Core-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core/releases/2024-08-06/OpenLHS-Core-base.owl"/>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:description>None</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <terms:title>OpenLHS Core Ontology</terms:title>
-        <owl:versionInfo>2024-08-01</owl:versionInfo>
+        <owl:versionInfo>2024-08-06</owl:versionInfo>
     </owl:Ontology>
     
 
