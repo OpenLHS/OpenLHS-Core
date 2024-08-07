@@ -4,11 +4,6 @@ WARN	missing_definition	specified value	IAO:0000115
 WARN	missing_definition	numerical specified value	IAO:0000115	
 WARN	missing_definition	unit qualified scalar specified value	IAO:0000115	
 WARN	missing_definition	unit	IAO:0000115	
-WARN	missing_definition	has textual representation	IAO:0000115	
-WARN	missing_definition	has value	IAO:0000115	
-WARN	missing_definition	has numerical value	IAO:0000115	
-WARN	missing_definition	has temporal value	IAO:0000115	
-WARN	missing_definition	has text value	IAO:0000115	
 WARN	missing_definition	SEPIO:0000187	IAO:0000115	
 WARN	missing_definition	description	IAO:0000115	
 WARN	missing_definition	license	IAO:0000115	
