@@ -17,6 +17,9 @@ import_group:
     - id: OpenLHS-Imports
       module_type: mirror
       mirror_from: "https://raw.githubusercontent.com/OpenLHS/OpenLHS-Imports/main/OpenLHS-Imports.owl"
+    - id: Ontorel-Core
+      module_type: mirror
+      mirror_from: "https://raw.githubusercontent.com/OpenLHS/Ontorel-Core/main/Ontorel-Core.owl"
 robot_report:
   custom_sparql_exports:
     - base-classes-report
