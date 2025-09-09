@@ -12,7 +12,7 @@ OpenLHS-Core_0000024,postal address city,An identifier that denotes a city and i
 OpenLHS-Core_0000025,postal address country,An identifier that denotes a country and is intended to be used as part of a postal address.
 OpenLHS-Core_0000026,canadian postal code,A postal code that denotes some geographical region in Canada.
 OpenLHS-Core_0000027,request,"An information content entity specifiying one or several types of processes that a party, whether a person or an organization, wants to see instantiated for the benefit of itself or another party."
-OpenLHS-Core_0000028,service agreement specification,"An information content entity that specifies a service agreement made between a request party and a service offer party, and aim to direct some processes that correspond to what has been agreed between the parties."
+OpenLHS-Core_0000028,service agreement directive entity,"A directive information entity that specifies a service agreement made between a request party and a service offer party, and aim to direct some processes that correspond to what has been agreed between the parties."
 OpenLHS-Core_0000029,service offer,An information content entity describing the processes a person or an organization is willing to perform for a third-party.
 OpenLHS-Core_0000030,temporally qualifying statement,"A statement that states that an entity existed, exists or will exist at some point during a specified temporal region."
 OpenLHS-Core_0000031,process temporally qualifying statement,"A temporally qualifying statement stating that a temporal region overlaps with a temporal region during which some process occurred, occurs or will occur."
