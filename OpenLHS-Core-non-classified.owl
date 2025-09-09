@@ -16,11 +16,11 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core/OpenLHS-Core-non-classified.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core/releases/2025-09-05/OpenLHS-Core-non-classified.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core/releases/2025-09-09/OpenLHS-Core-non-classified.owl"/>
         <terms:description>None</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <terms:title>OpenLHS Core Ontology</terms:title>
-        <owl:versionInfo>2025-09-05</owl:versionInfo>
+        <owl:versionInfo>2025-09-09</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -4286,17 +4286,17 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
     <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000028 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000028">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000035"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An information content entity that specifies a service agreement made between a request party and a service offer party, and aim to direct some processes that correspond to what has been agreed between the parties.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity that specifies a service agreement made between a request party and a service offer party, and aim to direct some processes that correspond to what has been agreed between the parties.</obo:IAO_0000115>
         <obo:OpenLHS-Core_0000061 xml:lang="en">An information content entity that is the output of a service agreement negociation.</obo:OpenLHS-Core_0000061>
         <obo:OpenLHS-Core_0000062 xml:lang="en">An information content entity that specifies a service agreement made between a request party and a service offer party, and aim to direct some processes that correspond to what has been agreed between the parties.</obo:OpenLHS-Core_0000062>
-        <rdfs:label xml:lang="en">service agreement specification</rdfs:label>
+        <rdfs:label xml:lang="en">service agreement directive entity</rdfs:label>
     </owl:Class>
     
 

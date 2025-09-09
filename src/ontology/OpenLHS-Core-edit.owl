@@ -307,13 +307,13 @@ AnnotationAssertion(rdfs:label obo:OpenLHS-Core_0000027 "request"@en)
 SubClassOf(obo:OpenLHS-Core_0000027 obo:IAO_0000030)
 SubClassOf(obo:OpenLHS-Core_0000027 ObjectSomeValuesFrom(obo:BFO_0000051 obo:IAO_0000033))
 
-# Class: obo:OpenLHS-Core_0000028 (service agreement specification)
+# Class: obo:OpenLHS-Core_0000028 (service agreement directive entity)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OpenLHS-Core_0000028 "An information content entity that specifies a service agreement made between a request party and a service offer party, and aim to direct some processes that correspond to what has been agreed between the parties."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OpenLHS-Core_0000028 "A directive information entity that specifies a service agreement made between a request party and a service offer party, and aim to direct some processes that correspond to what has been agreed between the parties."@en)
 AnnotationAssertion(obo:OpenLHS-Core_0000061 obo:OpenLHS-Core_0000028 "An information content entity that is the output of a service agreement negociation."@en)
 AnnotationAssertion(obo:OpenLHS-Core_0000062 obo:OpenLHS-Core_0000028 "An information content entity that specifies a service agreement made between a request party and a service offer party, and aim to direct some processes that correspond to what has been agreed between the parties."@en)
-AnnotationAssertion(rdfs:label obo:OpenLHS-Core_0000028 "service agreement specification"@en)
-SubClassOf(obo:OpenLHS-Core_0000028 obo:IAO_0000030)
+AnnotationAssertion(rdfs:label obo:OpenLHS-Core_0000028 "service agreement directive entity"@en)
+SubClassOf(obo:OpenLHS-Core_0000028 obo:IAO_0000033)
 SubClassOf(obo:OpenLHS-Core_0000028 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OpenLHS-Core_0000035))
 
 # Class: obo:OpenLHS-Core_0000029 (service offer)
